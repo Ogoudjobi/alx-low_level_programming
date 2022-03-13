@@ -18,7 +18,7 @@ int main(void)
 			putchar(ones);
 			if (tens != '8' || ones != '9')
 			{
-				putchr(',');
+				putchar(',');
 				putchar(' ');
 			}
 		}
