@@ -11,6 +11,7 @@ int main(void)
 	int ones;
 	int t;
 	int o;
+	int flag = 0;
 
 	for (tens = '0'; tens <= '9'; tens++)
 	{
@@ -20,6 +21,11 @@ int main(void)
 			{
 				for (o = (ones + 1); o <= '9'; o++)
 				{
+					if (flag == 1)
+					{
+						o = '0';
+						flag = 0;
+					}
 					putchar(tens);
 					putchar(ones);
 					putchar(' ');
@@ -32,7 +38,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				o = '0';
+				flag = 1;
 			}
 		}
 	}
