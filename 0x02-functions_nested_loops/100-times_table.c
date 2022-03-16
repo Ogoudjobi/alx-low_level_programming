@@ -1,15 +1,11 @@
 #include "main.h"
-
 /**
  * print_times_table - print multiplication table up to n
  * @n: integer argument
  */
-
 void print_times_table(int n)
 {
-	int row;
-	int column;
-	int product;
+	int row, column, product;
 
 	if (n >= 0 && n <= 15)
 	{
@@ -19,9 +15,7 @@ void print_times_table(int n)
 			{
 				product = (row * column);
 				if (column == 0)
-				{
 					_putchar('0' + product);
-				}
 				else
 				{
 					_putchar(',');
